@@ -11,7 +11,7 @@
 -define(MIME_AWS_JSON, "application/x-amz-json-1.0").
 -define(SCHEME, https).
 
--define(DEFAULT_REGION, "us-east-1").
+-define(DEFAULT_REGION, "eu-central-1").
 -define(DEFAULT_PROFILE, "default").
 
 -define(INSTANCE_AZ, ["placement", "availability-zone"]).

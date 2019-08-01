@@ -1,4 +1,4 @@
-# rabbitmq-aws
+[[#]] rabbitmq-aws
 
 A fork of [gmr/httpc-aws](https://github.com/gmr/httpc-aws) for use in building RabbitMQ plugins that interact with Amazon Web Services APIs.
 

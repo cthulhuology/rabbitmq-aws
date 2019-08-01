@@ -321,9 +321,9 @@ local_time() ->
 %%      presented.
 %% @end.
 maybe_decode_body({"application", "x-amz-json-1.0"}, Body) ->
-  rabbitmq_aws_json:decode(Body);
+  rabbitmq_json:decode(Body);
 maybe_decode_body({"application", "json"}, Body) ->
-  rabbitmq_aws_json:decode(Body);
+  rabbitmq_json:decode(Body);
 maybe_decode_body({_, "xml"}, Body) ->
   rabbitmq_aws_xml:parse(Body);
 maybe_decode_body(_ContentType, Body) ->
