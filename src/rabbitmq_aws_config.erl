@@ -609,7 +609,7 @@ parse_body_response({ok, {{_, _, _}, _, _}}) -> {error, undefined}.
 parse_credentials_response({error, _}) -> {error, undefined};
 parse_credentials_response({ok, {{_, 404, _}, _, _}}) -> {error, undefined};
 parse_credentials_response({ok, {{_, 200, _}, _, Body}}) ->
-  Parsed = rabbitmq_json:decode(Body),
+  Parsed = rabbit_json:decode(Body),
   {ok,
    proplists:get_value("AccessKeyId", Parsed),
    proplists:get_value("SecretAccessKey", Parsed),
